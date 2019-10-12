@@ -1,0 +1,71 @@
+Craps is a simple game that can be played effortlessly while only 
+giving up either a 1.40% or 1.34% advantage to the house. There are
+different worse bets to make. But I will have them at the end as an
+extra bonus. 
+
+There are 2 kinds of bets for this problem.
+1. Pass
+2. Don't Pass
+
+It is played with a pair of 6 sided dice. Play is repeated until 
+the bet is won or lost. A bet pays even money. For this we shall assume
+that each bet is $10 (this will make one of the bonuses easier). 
+
+The rule for the Pass bet is that in the initial state the dice are rolled. 
+If that first roll is (1,1), (1,2), or (6,6) the bet is lost and play 
+is completed. If that first roll is (1,6), (2,5), (3,4), or (5,6) the bet is
+won and play is completed. If any other rolls are made with totals of 
+4,5,6,8,9.10 then "the point" is set at that value. The player then continues
+to roll the dice until either the roll is equal to "the point" in which case the
+bet is won and play is completed, or the roll is equal to 7 in which case the 
+bet is lost and play is completed. If you run out of data before the bet is
+won or lost then play is completed and the bet is returned, no win, no loss.
+
+The play for the "Don't Pass" bet is the same as for the Pass described above 
+except initially when 2,3, or 12 is rolled the bet wins and play is completed.
+If initially 7 or 11 is rolled the bet is lost and play is completed. Once the
+point is set, if 7 is rolled play is completed and the bet wins, or the point
+is rolled and the bet is lost and play is completed.
+
+As I mentioned earlier there are known house advantages 1.40% if you bet
+"Pass", and 1.36% if you play "Don't Pass". There is also another bet called
+"odds" which has no house advantage. But I leave that as a bonus. :)
+
+The problem is to show that both of these bets are quite favorable for the
+player. Generate a large sample of dice pair rolls. They should probably be
+stored in a file or however you like so that you can run your solution
+differently with the same sample. Roll through the sample data and calculate
+the wins and losses and calculate the house advantage. Try running through the
+data just starting in the second, third, or forth position and even possibly
+backwards. These should be whole different play in some cases. Perhaps you can 
+try to create a strategy of sometimes playing "Pass" and others "Don't pass"
+and see if it does better than just playing always "Pass" or "Don't Pass".
+Perhaps every other one, or switch after a win, or a loss or something else. 
+
+Show comparison between playing "Pass", "Don't Pass", and "Your amazing
+randomized strategy of switching back and forth between them on whatever
+decisions you like"
+
+Stop here if you are not interested in the bonus odds section. 
+
+The bonus is to show how playing odds helps the player further reduce the
+house advantage. Odds can only be played when "the point is set". If you are
+playing "Pass" you can place odds. If you are playing "Don't Pass" you can
+take odds. On "Pass" the odds bet pays 2 for 1 on 4 or 10; 3 for 2  on 5 or 9;
+and 6 for 5 on 6 or 8. So this means if you have a pass bet, and the point is
+set. You can then add an odds bet. If play causes a
+win then the bet is paid one for one on the Pass bet, and at the described
+rate for the pass amount. So if the bet was $10 and the odds was $10 and the
+point was 4 or 10 then your pass bet wins $10 and your odds bet wins $20 so
+you take $50 from the table. If the point was on 5 or 9 the odds would pay $15
+and the Pass would pay $10 so you walk away with $45. And if the point had
+been 6 or 8, then odds would pay $12 and so on to walk away with $42. 
+
+When you are playing "Don't come" then the odds work in the opposite
+direction. So if the point is 10 or 4 then the bet wins $5 for a $10 odds bet,
+$10 for a $15 odds bet and $10 for a $12 odds bet. In these cases you will
+walk away from the table with the same money as described under the "Pass"
+describtion.
+
+If you add the ability to do odds, you can now show always play the odds, or
+never play odds or some strategy like above. 
