@@ -22,10 +22,11 @@ bet is lost and play is completed. If you run out of data before the bet is
 won or lost then play is completed and the bet is returned, no win, no loss.
 
 The play for the "Don't Pass" bet is the same as for the Pass described above 
-except initially when 2,3, or 12 is rolled the bet wins and play is completed.
-If initially 7 or 11 is rolled the bet is lost and play is completed. Once the
-point is set, if 7 is rolled play is completed and the bet wins, or the point
-is rolled and the bet is lost and play is completed.
+except initially when 2,3 is rolled the bet wins and play is completed. If
+initially a 12 is rolled play is completed but there is no win or loss the bet 
+is just returned.  If initially 7 or 11 is rolled the bet is lost and play is 
+completed. Once the point is set, if 7 is rolled play is completed and the bet
+wins, or the point is rolled and the bet is lost and play is completed.
 
 As I mentioned earlier there are known house advantages 1.40% if you bet
 "Pass", and 1.36% if you play "Don't Pass". There is also another bet called
@@ -44,7 +45,7 @@ Perhaps every other one, or switch after a win, or a loss or something else.
 
 Show comparison between playing "Pass", "Don't Pass", and "Your amazing
 randomized strategy of switching back and forth between them on whatever
-decisions you like"
+decisions you like."
 
 Stop here if you are not interested in the bonus odds section. 
 
